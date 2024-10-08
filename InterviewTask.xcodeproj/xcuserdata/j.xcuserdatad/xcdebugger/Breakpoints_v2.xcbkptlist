@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "06807546-0EA9-4F28-9FD6-66F0AA000253"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CFD74AC0-E0FE-4C77-BCED-7EEB1D7E0E8B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InterviewTask/Admin/AddEmployeesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "btnAddEmployee(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "72DBF270-291D-42B9-89D7-2EE1660C739F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "InterviewTask/Admin/AddEmployeesViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "btnAddEmployee(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "72DBF270-291D-42B9-89D7-2EE1660C739F - 73336895769da389"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;InterviewTask.EmployeeModel, Swift.Error&gt;) -&gt; () in InterviewTask.AddEmployeesViewController.btnAddEmployee(__C.UIButton) -&gt; ()"
+                  moduleName = "InterviewTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/j/Desktop/InterviewTask/InterviewTask/Admin/AddEmployeesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "2610">
+               </Location>
+               <Location
+                  uuid = "72DBF270-291D-42B9-89D7-2EE1660C739F - a745696aaf6321b1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (Swift.Int) -&gt; () in closure #1 (Swift.Result&lt;InterviewTask.EmployeeModel, Swift.Error&gt;) -&gt; () in InterviewTask.AddEmployeesViewController.btnAddEmployee(__C.UIButton) -&gt; ()"
+                  moduleName = "InterviewTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/j/Desktop/InterviewTask/InterviewTask/Admin/AddEmployeesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

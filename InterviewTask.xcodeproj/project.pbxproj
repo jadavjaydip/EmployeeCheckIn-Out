@@ -9,23 +9,58 @@
 /* Begin PBXBuildFile section */
 		097E762C2CB4F33B007E5C9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E762B2CB4F33B007E5C9B /* AppDelegate.swift */; };
 		097E762E2CB4F33B007E5C9B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E762D2CB4F33B007E5C9B /* SceneDelegate.swift */; };
-		097E76302CB4F33B007E5C9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E762F2CB4F33B007E5C9B /* ViewController.swift */; };
+		097E76302CB4F33B007E5C9B /* SelectRoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E762F2CB4F33B007E5C9B /* SelectRoleViewController.swift */; };
 		097E76332CB4F33B007E5C9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097E76312CB4F33B007E5C9B /* Main.storyboard */; };
 		097E76362CB4F33B007E5C9B /* InterviewTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 097E76342CB4F33B007E5C9B /* InterviewTask.xcdatamodeld */; };
 		097E76382CB4F33D007E5C9B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 097E76372CB4F33D007E5C9B /* Assets.xcassets */; };
 		097E763B2CB4F33D007E5C9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 097E76392CB4F33D007E5C9B /* LaunchScreen.storyboard */; };
+		097E76432CB4F6C2007E5C9B /* AdminLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E76422CB4F6C2007E5C9B /* AdminLoginViewController.swift */; };
+		097E76452CB4F6D1007E5C9B /* EmployeeLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E76442CB4F6D1007E5C9B /* EmployeeLoginViewController.swift */; };
+		097E76472CB4F88E007E5C9B /* AdminDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E76462CB4F88E007E5C9B /* AdminDashboardViewController.swift */; };
+		097E764E2CB4FF69007E5C9B /* AddEmployeesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E764D2CB4FF69007E5C9B /* AddEmployeesViewController.swift */; };
+		097E76502CB5011B007E5C9B /* ViewEmployeeByViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E764F2CB5011B007E5C9B /* ViewEmployeeByViewController.swift */; };
+		097E76562CB505BF007E5C9B /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E76552CB505BF007E5C9B /* Networking.swift */; };
+		097E76592CB507B6007E5C9B /* AppComponet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E76582CB507B6007E5C9B /* AppComponet.swift */; };
+		097E765B2CB50C3A007E5C9B /* AttendanceHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E765A2CB50C3A007E5C9B /* AttendanceHistoryViewController.swift */; };
+		097E765D2CB50DCD007E5C9B /* EmployeeProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E765C2CB50DCD007E5C9B /* EmployeeProfileViewController.swift */; };
+		097E765F2CB50E0C007E5C9B /* EmployeeCheckInAndCheckOutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E765E2CB50E0C007E5C9B /* EmployeeCheckInAndCheckOutViewController.swift */; };
+		097E76622CB516CB007E5C9B /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 097E76612CB516CB007E5C9B /* SwiftyJSON */; };
+		097E76652CB51CC4007E5C9B /* EmployeeListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E76632CB51CC4007E5C9B /* EmployeeListTableViewCell.swift */; };
+		097E76662CB51CC4007E5C9B /* EmployeeListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 097E76642CB51CC4007E5C9B /* EmployeeListTableViewCell.xib */; };
+		097E76682CB51FD1007E5C9B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E76672CB51FD1007E5C9B /* CardView.swift */; };
+		097E766B2CB53924007E5C9B /* AttentdanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E76692CB53924007E5C9B /* AttentdanceTableViewCell.swift */; };
+		097E766C2CB53924007E5C9B /* AttentdanceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 097E766A2CB53924007E5C9B /* AttentdanceTableViewCell.xib */; };
+		097E766E2CB54DA0007E5C9B /* ActivityIndicatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E766D2CB54DA0007E5C9B /* ActivityIndicatior.swift */; };
+		097E76712CB56006007E5C9B /* EmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E76702CB56006007E5C9B /* EmployeeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		097E76282CB4F33B007E5C9B /* InterviewTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InterviewTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		097E762B2CB4F33B007E5C9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		097E762D2CB4F33B007E5C9B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		097E762F2CB4F33B007E5C9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		097E762F2CB4F33B007E5C9B /* SelectRoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoleViewController.swift; sourceTree = "<group>"; };
 		097E76322CB4F33B007E5C9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		097E76352CB4F33B007E5C9B /* InterviewTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InterviewTask.xcdatamodel; sourceTree = "<group>"; };
 		097E76372CB4F33D007E5C9B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		097E763A2CB4F33D007E5C9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		097E763C2CB4F33D007E5C9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		097E76422CB4F6C2007E5C9B /* AdminLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLoginViewController.swift; sourceTree = "<group>"; };
+		097E76442CB4F6D1007E5C9B /* EmployeeLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeLoginViewController.swift; sourceTree = "<group>"; };
+		097E76462CB4F88E007E5C9B /* AdminDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminDashboardViewController.swift; sourceTree = "<group>"; };
+		097E764D2CB4FF69007E5C9B /* AddEmployeesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmployeesViewController.swift; sourceTree = "<group>"; };
+		097E764F2CB5011B007E5C9B /* ViewEmployeeByViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewEmployeeByViewController.swift; sourceTree = "<group>"; };
+		097E76552CB505BF007E5C9B /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		097E76582CB507B6007E5C9B /* AppComponet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponet.swift; sourceTree = "<group>"; };
+		097E765A2CB50C3A007E5C9B /* AttendanceHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttendanceHistoryViewController.swift; sourceTree = "<group>"; };
+		097E765C2CB50DCD007E5C9B /* EmployeeProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeProfileViewController.swift; sourceTree = "<group>"; };
+		097E765E2CB50E0C007E5C9B /* EmployeeCheckInAndCheckOutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeCheckInAndCheckOutViewController.swift; sourceTree = "<group>"; };
+		097E76632CB51CC4007E5C9B /* EmployeeListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListTableViewCell.swift; sourceTree = "<group>"; };
+		097E76642CB51CC4007E5C9B /* EmployeeListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmployeeListTableViewCell.xib; sourceTree = "<group>"; };
+		097E76672CB51FD1007E5C9B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		097E76692CB53924007E5C9B /* AttentdanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttentdanceTableViewCell.swift; sourceTree = "<group>"; };
+		097E766A2CB53924007E5C9B /* AttentdanceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttentdanceTableViewCell.xib; sourceTree = "<group>"; };
+		097E766D2CB54DA0007E5C9B /* ActivityIndicatior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatior.swift; sourceTree = "<group>"; };
+		097E76702CB56006007E5C9B /* EmployeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				097E76622CB516CB007E5C9B /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +94,14 @@
 		097E762A2CB4F33B007E5C9B /* InterviewTask */ = {
 			isa = PBXGroup;
 			children = (
+				097E766F2CB55FC7007E5C9B /* Model */,
+				097E76572CB5078D007E5C9B /* CommanComponet */,
+				097E76542CB505AA007E5C9B /* Networking */,
+				097E76512CB502A1007E5C9B /* Employee */,
+				097E764C2CB4FCEF007E5C9B /* Admin */,
 				097E762B2CB4F33B007E5C9B /* AppDelegate.swift */,
 				097E762D2CB4F33B007E5C9B /* SceneDelegate.swift */,
-				097E762F2CB4F33B007E5C9B /* ViewController.swift */,
+				097E762F2CB4F33B007E5C9B /* SelectRoleViewController.swift */,
 				097E76312CB4F33B007E5C9B /* Main.storyboard */,
 				097E76372CB4F33D007E5C9B /* Assets.xcassets */,
 				097E76392CB4F33D007E5C9B /* LaunchScreen.storyboard */,
@@ -68,6 +109,58 @@
 				097E76342CB4F33B007E5C9B /* InterviewTask.xcdatamodeld */,
 			);
 			path = InterviewTask;
+			sourceTree = "<group>";
+		};
+		097E764C2CB4FCEF007E5C9B /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+				097E76422CB4F6C2007E5C9B /* AdminLoginViewController.swift */,
+				097E76462CB4F88E007E5C9B /* AdminDashboardViewController.swift */,
+				097E76632CB51CC4007E5C9B /* EmployeeListTableViewCell.swift */,
+				097E76642CB51CC4007E5C9B /* EmployeeListTableViewCell.xib */,
+				097E764D2CB4FF69007E5C9B /* AddEmployeesViewController.swift */,
+				097E764F2CB5011B007E5C9B /* ViewEmployeeByViewController.swift */,
+				097E765A2CB50C3A007E5C9B /* AttendanceHistoryViewController.swift */,
+				097E76692CB53924007E5C9B /* AttentdanceTableViewCell.swift */,
+				097E766A2CB53924007E5C9B /* AttentdanceTableViewCell.xib */,
+			);
+			path = Admin;
+			sourceTree = "<group>";
+		};
+		097E76512CB502A1007E5C9B /* Employee */ = {
+			isa = PBXGroup;
+			children = (
+				097E76442CB4F6D1007E5C9B /* EmployeeLoginViewController.swift */,
+				097E765C2CB50DCD007E5C9B /* EmployeeProfileViewController.swift */,
+				097E765E2CB50E0C007E5C9B /* EmployeeCheckInAndCheckOutViewController.swift */,
+			);
+			path = Employee;
+			sourceTree = "<group>";
+		};
+		097E76542CB505AA007E5C9B /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				097E76552CB505BF007E5C9B /* Networking.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		097E76572CB5078D007E5C9B /* CommanComponet */ = {
+			isa = PBXGroup;
+			children = (
+				097E76582CB507B6007E5C9B /* AppComponet.swift */,
+				097E76672CB51FD1007E5C9B /* CardView.swift */,
+				097E766D2CB54DA0007E5C9B /* ActivityIndicatior.swift */,
+			);
+			path = CommanComponet;
+			sourceTree = "<group>";
+		};
+		097E766F2CB55FC7007E5C9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				097E76702CB56006007E5C9B /* EmployeeModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +179,9 @@
 			dependencies = (
 			);
 			name = InterviewTask;
+			packageProductDependencies = (
+				097E76612CB516CB007E5C9B /* SwiftyJSON */,
+			);
 			productName = InterviewTask;
 			productReference = 097E76282CB4F33B007E5C9B /* InterviewTask.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +210,9 @@
 				Base,
 			);
 			mainGroup = 097E761F2CB4F33B007E5C9B;
+			packageReferences = (
+				097E76602CB516CB007E5C9B /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 097E76292CB4F33B007E5C9B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +228,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				097E763B2CB4F33D007E5C9B /* LaunchScreen.storyboard in Resources */,
+				097E76662CB51CC4007E5C9B /* EmployeeListTableViewCell.xib in Resources */,
+				097E766C2CB53924007E5C9B /* AttentdanceTableViewCell.xib in Resources */,
 				097E76382CB4F33D007E5C9B /* Assets.xcassets in Resources */,
 				097E76332CB4F33B007E5C9B /* Main.storyboard in Resources */,
 			);
@@ -141,10 +242,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				097E76302CB4F33B007E5C9B /* ViewController.swift in Sources */,
+				097E76302CB4F33B007E5C9B /* SelectRoleViewController.swift in Sources */,
+				097E76562CB505BF007E5C9B /* Networking.swift in Sources */,
+				097E765F2CB50E0C007E5C9B /* EmployeeCheckInAndCheckOutViewController.swift in Sources */,
+				097E76502CB5011B007E5C9B /* ViewEmployeeByViewController.swift in Sources */,
+				097E764E2CB4FF69007E5C9B /* AddEmployeesViewController.swift in Sources */,
+				097E76472CB4F88E007E5C9B /* AdminDashboardViewController.swift in Sources */,
 				097E762C2CB4F33B007E5C9B /* AppDelegate.swift in Sources */,
+				097E765D2CB50DCD007E5C9B /* EmployeeProfileViewController.swift in Sources */,
+				097E76432CB4F6C2007E5C9B /* AdminLoginViewController.swift in Sources */,
+				097E76592CB507B6007E5C9B /* AppComponet.swift in Sources */,
+				097E765B2CB50C3A007E5C9B /* AttendanceHistoryViewController.swift in Sources */,
 				097E76362CB4F33B007E5C9B /* InterviewTask.xcdatamodeld in Sources */,
+				097E76452CB4F6D1007E5C9B /* EmployeeLoginViewController.swift in Sources */,
+				097E766B2CB53924007E5C9B /* AttentdanceTableViewCell.swift in Sources */,
 				097E762E2CB4F33B007E5C9B /* SceneDelegate.swift in Sources */,
+				097E76682CB51FD1007E5C9B /* CardView.swift in Sources */,
+				097E76712CB56006007E5C9B /* EmployeeModel.swift in Sources */,
+				097E766E2CB54DA0007E5C9B /* ActivityIndicatior.swift in Sources */,
+				097E76652CB51CC4007E5C9B /* EmployeeListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +481,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		097E76602CB516CB007E5C9B /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		097E76612CB516CB007E5C9B /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 097E76602CB516CB007E5C9B /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		097E76342CB4F33B007E5C9B /* InterviewTask.xcdatamodeld */ = {
