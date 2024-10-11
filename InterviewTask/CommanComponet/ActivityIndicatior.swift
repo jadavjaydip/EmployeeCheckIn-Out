@@ -29,7 +29,9 @@ class ActivityIndicatior: NSObject {
     
     static func stopIndicator(view: UIView? = nil){
         if loaderView != nil {
-            viewBG.removeFromSuperview()
+            DispatchQueue.main.async {
+                viewBG.removeFromSuperview()
+            }
         }
     }
 }

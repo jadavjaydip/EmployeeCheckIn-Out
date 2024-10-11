@@ -7,23 +7,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CFD74AC0-E0FE-4C77-BCED-7EEB1D7E0E8B"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "InterviewTask/Admin/AddEmployeesViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
-            landmarkName = "btnAddEmployee(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "72DBF270-291D-42B9-89D7-2EE1660C739F"
+            uuid = "C31FBC39-6BE9-4197-831E-BAB49C2A7AC0"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -36,11 +20,11 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "72DBF270-291D-42B9-89D7-2EE1660C739F - 73336895769da389"
+                  uuid = "C31FBC39-6BE9-4197-831E-BAB49C2A7AC0 - 2f2b17ad2f22ada4"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Result&lt;InterviewTask.EmployeeModel, Swift.Error&gt;) -&gt; () in InterviewTask.AddEmployeesViewController.btnAddEmployee(__C.UIButton) -&gt; ()"
+                  symbolName = "InterviewTask.AddEmployeesViewController.btnAddEmployee(__C.UIButton) -&gt; ()"
                   moduleName = "InterviewTask"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/j/Desktop/InterviewTask/InterviewTask/Admin/AddEmployeesViewController.swift"
@@ -48,14 +32,14 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "92"
                   endingLineNumber = "92"
-                  offsetFromSymbolStart = "2610">
+                  offsetFromSymbolStart = "8766">
                </Location>
                <Location
-                  uuid = "72DBF270-291D-42B9-89D7-2EE1660C739F - a745696aaf6321b1"
+                  uuid = "C31FBC39-6BE9-4197-831E-BAB49C2A7AC0 - 2f2b17ad2f22ada4"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (Swift.Int) -&gt; () in closure #1 (Swift.Result&lt;InterviewTask.EmployeeModel, Swift.Error&gt;) -&gt; () in InterviewTask.AddEmployeesViewController.btnAddEmployee(__C.UIButton) -&gt; ()"
+                  symbolName = "InterviewTask.AddEmployeesViewController.btnAddEmployee(__C.UIButton) -&gt; ()"
                   moduleName = "InterviewTask"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/j/Desktop/InterviewTask/InterviewTask/Admin/AddEmployeesViewController.swift"
@@ -63,7 +47,22 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "92"
                   endingLineNumber = "92"
-                  offsetFromSymbolStart = "16">
+                  offsetFromSymbolStart = "8629">
+               </Location>
+               <Location
+                  uuid = "C31FBC39-6BE9-4197-831E-BAB49C2A7AC0 - 87821e9384e33a37"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "InterviewTask.AddEmployeesViewController.btnAddEmployee(__C.UIButton) -&gt; ()"
+                  moduleName = "InterviewTask"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/j/Downloads/InterviewTask/InterviewTask/Admin/AddEmployeesViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "8629">
                </Location>
             </Locations>
          </BreakpointContent>

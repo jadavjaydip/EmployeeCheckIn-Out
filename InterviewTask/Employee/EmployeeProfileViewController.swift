@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class EmployeeProfileViewController: UIViewController {
 
@@ -24,6 +25,7 @@ class EmployeeProfileViewController: UIViewController {
     var employeeData: EmployeeModel?
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Employee Profile"
         let btnName = UIButton(type: .custom)
         btnName.setImage(UIImage(systemName: "list.bullet.circle.fill"), for: .normal)
         btnName.frame = CGRectMake(0, 0, 30, 30)
@@ -52,6 +54,8 @@ class EmployeeProfileViewController: UIViewController {
             lblSeniorname.text = employee.seniorName
             lblSalary.text = employee.salaryMonthly
             lbldesignation.text = employee.designation
+            let url = "https://tracewavetransparency.com/admin/" + "\(employee.profilePhoto)"
+            imgEmployee.sd_setImage(with: URL(string: url), placeholderImage: UIImage(systemName: "User"))
         }
     }
 }

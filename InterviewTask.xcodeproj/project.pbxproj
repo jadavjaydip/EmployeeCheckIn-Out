@@ -32,6 +32,9 @@
 		097E766C2CB53924007E5C9B /* AttentdanceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 097E766A2CB53924007E5C9B /* AttentdanceTableViewCell.xib */; };
 		097E766E2CB54DA0007E5C9B /* ActivityIndicatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E766D2CB54DA0007E5C9B /* ActivityIndicatior.swift */; };
 		097E76712CB56006007E5C9B /* EmployeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 097E76702CB56006007E5C9B /* EmployeeModel.swift */; };
+		0982BB3B2CB6BDEF00F21ECE /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0982BB3A2CB6BDEF00F21ECE /* SDWebImage */; };
+		0982BB3D2CB6BEF600F21ECE /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 0982BB3C2CB6BEF600F21ECE /* SDWebImage */; };
+		0982BB3F2CB6BEF600F21ECE /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 0982BB3E2CB6BEF600F21ECE /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0982BB3D2CB6BEF600F21ECE /* SDWebImage in Frameworks */,
+				0982BB3B2CB6BDEF00F21ECE /* SDWebImage in Frameworks */,
+				0982BB3F2CB6BEF600F21ECE /* SDWebImageMapKit in Frameworks */,
 				097E76622CB516CB007E5C9B /* SwiftyJSON in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -114,15 +120,12 @@
 		097E764C2CB4FCEF007E5C9B /* Admin */ = {
 			isa = PBXGroup;
 			children = (
+				0982BB382CB6BA1200F21ECE /* Cell */,
 				097E76422CB4F6C2007E5C9B /* AdminLoginViewController.swift */,
 				097E76462CB4F88E007E5C9B /* AdminDashboardViewController.swift */,
-				097E76632CB51CC4007E5C9B /* EmployeeListTableViewCell.swift */,
-				097E76642CB51CC4007E5C9B /* EmployeeListTableViewCell.xib */,
 				097E764D2CB4FF69007E5C9B /* AddEmployeesViewController.swift */,
 				097E764F2CB5011B007E5C9B /* ViewEmployeeByViewController.swift */,
 				097E765A2CB50C3A007E5C9B /* AttendanceHistoryViewController.swift */,
-				097E76692CB53924007E5C9B /* AttentdanceTableViewCell.swift */,
-				097E766A2CB53924007E5C9B /* AttentdanceTableViewCell.xib */,
 			);
 			path = Admin;
 			sourceTree = "<group>";
@@ -163,6 +166,17 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		0982BB382CB6BA1200F21ECE /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				097E76632CB51CC4007E5C9B /* EmployeeListTableViewCell.swift */,
+				097E76642CB51CC4007E5C9B /* EmployeeListTableViewCell.xib */,
+				097E76692CB53924007E5C9B /* AttentdanceTableViewCell.swift */,
+				097E766A2CB53924007E5C9B /* AttentdanceTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -181,6 +195,9 @@
 			name = InterviewTask;
 			packageProductDependencies = (
 				097E76612CB516CB007E5C9B /* SwiftyJSON */,
+				0982BB3A2CB6BDEF00F21ECE /* SDWebImage */,
+				0982BB3C2CB6BEF600F21ECE /* SDWebImage */,
+				0982BB3E2CB6BEF600F21ECE /* SDWebImageMapKit */,
 			);
 			productName = InterviewTask;
 			productReference = 097E76282CB4F33B007E5C9B /* InterviewTask.app */;
@@ -212,6 +229,7 @@
 			mainGroup = 097E761F2CB4F33B007E5C9B;
 			packageReferences = (
 				097E76602CB516CB007E5C9B /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				0982BB392CB6BDEE00F21ECE /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = 097E76292CB4F33B007E5C9B /* Products */;
 			projectDirPath = "";
@@ -491,6 +509,14 @@
 				minimumVersion = 5.0.2;
 			};
 		};
+		0982BB392CB6BDEE00F21ECE /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.7;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -498,6 +524,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 097E76602CB516CB007E5C9B /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
 			productName = SwiftyJSON;
+		};
+		0982BB3A2CB6BDEF00F21ECE /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0982BB392CB6BDEE00F21ECE /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		0982BB3C2CB6BEF600F21ECE /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0982BB392CB6BDEE00F21ECE /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		0982BB3E2CB6BEF600F21ECE /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0982BB392CB6BDEE00F21ECE /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 

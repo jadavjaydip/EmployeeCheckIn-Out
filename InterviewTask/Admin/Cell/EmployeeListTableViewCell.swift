@@ -30,16 +30,18 @@ class EmployeeListTableViewCell: UITableViewCell {
        
     }
     
-    func setupData(data: EmployeeModel) {
-        lblName.text = data.name
-        lblemail.text = data.email
-        lblnumber.text = data.number
-        lblemployeeid.text = data.employeeID
-        lbljoiningdate.text = data.joiningDate
-        lbldepartment.text = data.department
-        lblpassword.text = data.password
-        lblsalarymonthly.text = data.salaryMonthly
-        lblseniorname.text = data.seniorName
-        lbldesignation.text = data.designation
+    func setupData(data: EmployeeModel?) {
+        if let data = data {
+            lblName.text = data.name
+            lblemail.text = data.email
+            lblnumber.text = data.number
+            lblemployeeid.text = data.employeeID
+            lbljoiningdate.text = data.joiningDate
+            lbldepartment.text = data.department
+            lblpassword.text = data.password
+            lblsalarymonthly.text = data.salaryMonthly
+            lblseniorname.text = data.seniorName
+            lbldesignation.text = data.designation
+        }
     }
 }

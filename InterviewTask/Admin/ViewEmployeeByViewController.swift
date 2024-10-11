@@ -24,6 +24,7 @@ class ViewEmployeeByViewController: UIViewController {
     var employee: EmployeeModel?
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Employee Details"
         setupData()
         //getEmplyeeDetails()
     }

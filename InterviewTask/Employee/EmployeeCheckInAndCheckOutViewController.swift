@@ -18,7 +18,7 @@ class EmployeeCheckInAndCheckOutViewController: UIViewController {
     var employeeData: EmployeeModel?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationItem.title = "Employee Check-In && Check-Out"
     }
     
     @IBAction func btnCheckIn(_ sender: UIButton) {
@@ -39,14 +39,13 @@ class EmployeeCheckInAndCheckOutViewController: UIViewController {
         dic["check_in_time"] = txtCheckInTime.text ?? ""
         dic["employee_id"] = employeeData?.employeeID ?? ""
         ActivityIndicatior.startIndicator(view: self.view)
-        Networking.sharedInstance.request(params: dic, url: "https://tracewavetransparency.com/admin/checkin.php", methodType: "POST", model: GanralModel.self) { [weak self] result in
+        Networking.sharedInstance.request(params: dic, url: "https://tracewavetransparency.com/admin/checkin.php", methodType: "POST") { [weak self] (model:GanralModel? , message:String) in
             guard let self = self else { return }
             ActivityIndicatior.stopIndicator(view: self.view)
-            switch result {
-            case .success(let success):
-                AppComponet().showAlert(controller: self,title: "success", message: "Check-in successful", buttonTitle: ["Ok"], buttonStyle: [.default]) { [weak self] _ in }
-            case .failure(let failure):
-                AppComponet().showAlert(controller: self, message: failure.localizedDescription, buttonTitle: ["Ok"], buttonStyle: [.default]) { [weak self] _ in }
+            if let model = model {
+                AppComponet().showAlert(controller: self,title: "success", message: "Check-in successful", buttonTitle: ["Ok"], buttonStyle: [.default]) { _ in }
+            }else {
+                AppComponet().showAlert(controller: self, message: message, buttonTitle: ["Ok"], buttonStyle: [.default]) { _ in }
             }
         }
     }
@@ -58,24 +57,23 @@ class EmployeeCheckInAndCheckOutViewController: UIViewController {
         dic["employee_id"] = employeeData?.employeeID ?? ""
         dic["total_hours"] = ""
         ActivityIndicatior.startIndicator(view: self.view)
-        Networking.sharedInstance.request(params: dic, url: "https://tracewavetransparency.com/admin/checkout.php", methodType: "POST", model: GanralModel.self) { [weak self] result in
+        Networking.sharedInstance.request(params: dic, url: "https://tracewavetransparency.com/admin/checkout.php", methodType: "POST") { [weak self] (model:GanralModel?, message:String)in
             guard let self = self else { return }
             ActivityIndicatior.stopIndicator(view: self.view)
-            switch result {
-            case .success(let success):
-                AppComponet().showAlert(controller: self,title: "success", message: "Check-out successful", buttonTitle: ["Ok"], buttonStyle: [.default]) { [weak self] _ in }
-            case .failure(let failure):
-                AppComponet().showAlert(controller: self, message: failure.localizedDescription, buttonTitle: ["Ok"], buttonStyle: [.default]) { [weak self] _ in }
+            if model != nil {
+                AppComponet().showAlert(controller: self,title: "success", message: "Check-out successful", buttonTitle: ["Ok"], buttonStyle: [.default]) {  _ in }
+            }else {
+                AppComponet().showAlert(controller: self, message: message, buttonTitle: ["Ok"], buttonStyle: [.default]) {  _ in }
             }
         }
     }
     
     func checkInValidation() -> Bool {
         if (txtCheckInDate.text ?? "").trimmingCharacters(in: .whitespaces).isEmpty {
-            AppComponet().showAlert(controller: self, message: "Please Enter check in date", buttonTitle: ["Ok"], buttonStyle: [.default]) { [weak self] _ in }
+            AppComponet().showAlert(controller: self, message: "Please Enter check in date", buttonTitle: ["Ok"], buttonStyle: [.default]) { _ in }
             return false
         }else if (txtCheckInTime.text ?? "").trimmingCharacters(in: .whitespaces).isEmpty {
-            AppComponet().showAlert(controller: self, message: "Please Enter check in time", buttonTitle: ["Ok"], buttonStyle: [.default]) { [weak self] _ in }
+            AppComponet().showAlert(controller: self, message: "Please Enter check in time", buttonTitle: ["Ok"], buttonStyle: [.default]) {  _ in }
             return false
         }
         return true
@@ -83,10 +81,10 @@ class EmployeeCheckInAndCheckOutViewController: UIViewController {
     
     func checkOutValidation() -> Bool {
         if (txtCheckOutDate.text ?? "").trimmingCharacters(in: .whitespaces).isEmpty {
-            AppComponet().showAlert(controller: self, message: "Please Enter check out date", buttonTitle: ["Ok"], buttonStyle: [.default]) { [weak self] _ in }
+            AppComponet().showAlert(controller: self, message: "Please Enter check out date", buttonTitle: ["Ok"], buttonStyle: [.default]) { _ in }
             return false
         }else if (txtCheckOutTime.text ?? "").trimmingCharacters(in: .whitespaces).isEmpty {
-            AppComponet().showAlert(controller: self, message: "Please Enter check out time", buttonTitle: ["Ok"], buttonStyle: [.default]) { [weak self] _ in }
+            AppComponet().showAlert(controller: self, message: "Please Enter check out time", buttonTitle: ["Ok"], buttonStyle: [.default]) { _ in }
             return false
         }
         return true

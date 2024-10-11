@@ -16,7 +16,7 @@ class AdminLoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        navigationItem.title = "Admin Penal"
     }
     
     @IBAction func btnLogin(_ sender: UIButton) {
@@ -27,17 +27,17 @@ class AdminLoginViewController: UIViewController {
                 let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AdminDashboardViewController") as! AdminDashboardViewController
                 self.navigationController?.pushViewController(vc, animated: true)
             } else {
-                AppComponet().showAlert(controller: self, message: "Please Enter currect credentional", buttonTitle: ["Ok"], buttonStyle: [.default]) { [weak self] _ in }
+                AppComponet().showAlert(controller: self, message: "Please Enter currect credentional", buttonTitle: ["Ok"], buttonStyle: [.default]) { _ in }
             }
         }
     }
     
     func validation() -> Bool {
         if (txtUserName.text ?? "").trimmingCharacters(in: .whitespaces).isEmpty {
-            AppComponet().showAlert(controller: self, message: "Please Enter User Name", buttonTitle: ["Ok"], buttonStyle: [.default]) { [weak self] _ in }
+            AppComponet().showAlert(controller: self, message: "Please Enter User Name", buttonTitle: ["Ok"], buttonStyle: [.default]) { _ in }
             return false
         }else if (txtPassword.text ?? "").trimmingCharacters(in: .whitespaces).isEmpty {
-            AppComponet().showAlert(controller: self, message: "Please Enter Password", buttonTitle: ["Ok"], buttonStyle: [.default]) { [weak self] _ in }
+            AppComponet().showAlert(controller: self, message: "Please Enter Password", buttonTitle: ["Ok"], buttonStyle: [.default]) {  _ in }
             return false
         }
         return true

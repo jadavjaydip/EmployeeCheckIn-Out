@@ -36,19 +36,20 @@ struct EmployeeModel:Codable {
         
     }
     
-    init(json: JSON) {
-        id = json["id"].intValue
-        name = json["name"].stringValue
-        email = json["email"].stringValue
-        number = json["number"].stringValue
-        employeeID = json["employee_id"].stringValue
-        joiningDate = json["joining_date"].stringValue
-        department = json["department"].stringValue
-        password = json["password"].stringValue
-        salaryMonthly = json["salary_monthly"].stringValue
-        designation = json["designation"].stringValue
-        seniorName = json["senior_name"].stringValue
-        profilePhoto = json["profile_photo"].stringValue
+    init(from decoder: Decoder) throws {
+        let values = try decoder.container(keyedBy: CodingKeys.self)
+        self.id = values.getIntValue(key: CodingKeys.id) ?? 0
+        self.name = values.getStringValue(key: CodingKeys.name) ?? ""
+        self.email = values.getStringValue(key: CodingKeys.email) ?? ""
+        self.number = values.getStringValue(key: CodingKeys.number) ?? ""
+        self.employeeID = values.getStringValue(key: CodingKeys.employeeID) ?? ""
+        self.joiningDate = values.getStringValue(key: CodingKeys.joiningDate) ?? ""
+        self.department = values.getStringValue(key: CodingKeys.department) ?? ""
+        self.password = values.getStringValue(key: CodingKeys.password) ?? ""
+        self.salaryMonthly = values.getStringValue(key: CodingKeys.salaryMonthly) ?? ""
+        self.designation = values.getStringValue(key: CodingKeys.designation) ?? ""
+        self.seniorName = values.getStringValue(key: CodingKeys.seniorName) ?? ""
+        self.profilePhoto = values.getStringValue(key: CodingKeys.profilePhoto) ?? ""
     }
 }
 

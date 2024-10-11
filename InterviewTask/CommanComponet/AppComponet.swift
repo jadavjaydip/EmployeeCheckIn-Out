@@ -12,8 +12,7 @@ class AppComponet {
         guard let mess = message else { return }
         let alert = UIAlertController(title: title, message: mess, preferredStyle: .alert)
         for i in 0..<buttonTitle.count {
-            let button = UIAlertAction(title: buttonTitle[i], style: buttonStyle[i]) { [weak self] action in
-                guard let self = self else { return }
+            let button = UIAlertAction(title: buttonTitle[i], style: buttonStyle[i]) { action in
             handler(i)
             }
             alert.addAction(button)

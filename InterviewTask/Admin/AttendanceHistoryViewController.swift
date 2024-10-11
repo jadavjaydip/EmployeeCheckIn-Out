@@ -14,6 +14,7 @@ class AttendanceHistoryViewController: UIViewController {
     var attendanceData:[AttendanceHistoryModel] = []
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Employee Attendance Record"
         tblAttendanceHistroy.register(UINib(nibName: "AttentdanceTableViewCell", bundle: nil), forCellReuseIdentifier: "AttentdanceTableViewCell")
         getEmployeeAttentdance()
     }
@@ -22,17 +23,16 @@ class AttendanceHistoryViewController: UIViewController {
         var dic = [String:Any]()
         dic["employee_id"] = employeeID
         ActivityIndicatior.startIndicator(view: self.view)
-        Networking.sharedInstance.request(params: dic, url: "https://tracewavetransparency.com/admin/attendance.php", methodType: "POST", model: [AttendanceHistoryModel].self, completionHandler: { [weak self] result in
+        Networking.sharedInstance.request(params: dic, url: "https://tracewavetransparency.com/admin/attendance.php", methodType: "POST") { [weak self] (model:[AttendanceHistoryModel]?, message:String) in
             guard let self = self else { return }
             ActivityIndicatior.stopIndicator(view: self.view)
-            switch result {
-            case .success(let model):
+            if let model = model {
                 self.attendanceData = model
                 self.reloadTableView()
-            case .failure(let failure):
-                AppComponet().showAlert(controller: self, message: failure.localizedDescription, buttonTitle: ["Ok"], buttonStyle: [.default]) { [weak self] _ in }
+            }else {
+                AppComponet().showAlert(controller: self, message: message, buttonTitle: ["Ok"], buttonStyle: [.default]) { _ in }
             }
-        })
+        }
     }
     func reloadTableView() {
         DispatchQueue.main.async {
